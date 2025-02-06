@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewed Awakening - Coffee Shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Brewed Awakening</a>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Brewed Awakening</h1>
+            <p>Start your day with a perfect cup of coffee</p>
+            <button onclick="location.href='#menu'">View Menu</button>
+        </div>
+    </header>
+        <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="./images/espresso.webp" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold espresso shot.</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/latte-small.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk.</p>
+                <p class="price">$3.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/capp.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Espresso, steamed milk, and foam.</p>
+                <p class="price">$3.75</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/sand.webp" alt="Breakfast Sandwich">
+                <h3>Breakfast Sandwich</h3>
+                <p>Egg, cheese, and bacon on a toasted bun.</p>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/pan.jpg" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <p>Fluffy pancakes with syrup.</p>
+                <p class="price">$5.00</p>
+            </div>
+            <!-- <div class="menu-item">
+                <img src="./images/cro.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>Buttery and flaky croissant.</p>
+                <p class="price">$2.75</p>
+            </div> -->
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Brewed Awakening, your neighborhood coffee haven. We are passionate about crafting the perfect cup of coffee and providing a warm, welcoming space for our community. Our mission is to bring people together over a delicious brew, made from the finest, ethically sourced beans. Whether you're here for a quick caffeine fix or a cozy morning breakfast, we strive to make every visit a delightful experience.</p>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+    
+</body>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+</html>
